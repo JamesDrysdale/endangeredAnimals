@@ -31,7 +31,10 @@
         </header>
         <section id="list-of-animals">
             <h2 id="extinct">Extinct</h2>
-
+            
+            <ul id="extinct-list">
+                
+            </ul>
 
             <h2 id="extinct-in-wild">Extinct in the Wild</h2>
 
@@ -44,13 +47,39 @@
             <h2 id="near-threatened">Near Threatened</h2>
 
             <h2 id="least-concern"> Least Concern</h2>
-            
+
         </section>
 
         <section id="create-list-item">
             <h2 id="add-animal">Add Animal</h2>
 
+            <form id="form">
+                <label for="common-name">Common Name:</label>
+                <input type="text" id="common-name"><br />
+
+                <label for="scientific-name">Scientific Name:</label>
+                <input type="text" id="scientific-name"><br />
+
+                <label for="conservation status">Conservation Status:</label>
+                <select id="conservation-status">
+                    <option disabled selected>What is the animal's conservation status?</option>
+                    <option value="select-extinct">Extinct</option>
+                    <option value="select-extinct-in-wild">Extinct in the Wild</option>
+                    <option value="select-critically-endangered">Critically Endangered</option>
+                    <option value="select-endangered">Endangered</option>
+                    <option value="select-vulnerable">Vulnerable</option>
+                    <option value="select-near-threatened">Near Threatened</option>
+                    <option value="select-least-concern">Least Concern</option>
+                </select>
+
+                <br /><br />
+                <button type="submit" id="submit-entry">Submit New Entry</button>
+            </form>
+
         </section>
 
+        <footer>
+            <p id="copyright-notice">Copyright &copy; <script>document.write(new Date().getFullYear())</script></p>
+        </footer>
     </body>
 </html>
