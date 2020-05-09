@@ -1,4 +1,78 @@
+body {
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*  STYLING THE HEADER AND NAVIGATION SECION */
 #main-title {
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+}
+
+header {
+    background-color: red;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style list items in top level nav */
+nav li {
+    float: left;
+    
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*  Stule links in top level nav */
+#top-level-nav a {
+    padding: 15px 15px;   
+}
+
+nav li a:hover {
+    background-color: #111;
+  }
+
+#categories-nav {
+    font-size: 1em;
+}
+
+#categories-nav a {
+    
+    padding: 10px 15px;
+    
+}
+
+/*  STYLING OF LIST ITEMS */
+
+#extinct-list {
+    list-style: none;
+    display: flex;  /* Makes list items flexible according to screen size */
+    flex-wrap: wrap;
+    
+}
+
+#extinct-list li {
+    border: 1px solid #333;
+    min-width: 220px;
+    margin: 20px;
+    padding: 30px;
+    
+}
+
+#extinct-list h3 {
+    position: relative;
+    top: 40px;
+
 }
