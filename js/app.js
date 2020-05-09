@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-        // Listen for the form submit button being pressed
-        const newItemForm = document.querySelector('#create-list-item');
-        newItemForm.addEventListener('submit', handleNewItemFormSubmit);
+    // Listen for the form submit button being pressed
+    const newItemForm = document.querySelector('#create-list-item');
+    newItemForm.addEventListener('submit', handleNewItemFormSubmit);
 
-        
-
+    // Listen for 'delete all' button being pressed 
+    const deleteAll = document.querySelector('#deleteAll');   
+    deleteAll.addEventListener('click', handleDeleteAllClick);
 
 })
 
@@ -37,4 +38,12 @@ const createConservationListItem = function (form) {
 
     return conservationListItem;
 
+}
+
+
+
+// Deletes all entries when 'delete all' button is clicked
+const handleDeleteAllClick = function (event) {
+    const conservationList = document.querySelector('#extinct-list');
+    conservationList.innerHTML = '';
 }
