@@ -1,5 +1,7 @@
 body {
     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: lightgrey;
+    margin: 0;
 }
 
 /*  STYLING THE HEADER AND NAVIGATION SECION */
@@ -14,12 +16,22 @@ header {
     
 }
 
+/*  Changing default appearance of button to fit nav better */
+/* nav button {
+    background-color: #333;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+} */
+
 nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    padding: 15px 15px;
 }
 
 /* Style list items in top level nav */
@@ -56,6 +68,10 @@ nav li a:hover {
 
 /*  STYLING OF LIST ITEMS */
 
+section {
+    margin: 20px;
+}
+
 #extinct-list {
     list-style: none;
     display: flex;  /* Makes list items flexible according to screen size */
@@ -66,7 +82,7 @@ nav li a:hover {
 #extinct-list li {
     border: 1px solid #333;
     min-width: 220px;
-    margin: 20px;
+    margin: 15px;
     padding: 30px;
     
 }
@@ -75,4 +91,16 @@ nav li a:hover {
     position: relative;
     top: 40px;
 
+}
+
+
+/*   STYLING ADD ANIMAL SECTION */
+
+.subheader {
+    background-color: #333;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin-bottom: 20px;
 }
