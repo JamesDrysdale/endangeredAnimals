@@ -28,10 +28,9 @@ header {
 nav ul{
     list-style-type: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: #333;
-    padding: 15px 15px;
+    padding: 0px 15px;
 }
 
 /* Style list items in top level nav */
@@ -45,11 +44,13 @@ nav a {
     color: white;
     text-align: center;
     text-decoration: none;
+    padding: 10px 15px;
+    
 }
 
 /*  Stule links in top level nav */
 #top-level-nav a {
-    padding: 15px 15px;   
+    font-size: 1em;   
 }
 
 nav li a:hover {
@@ -57,19 +58,19 @@ nav li a:hover {
   }
 
 #categories-nav {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 #categories-nav a {
     
-    padding: 10px 15px;
+    padding: 20px 15px;
     
 }
 
 /*  STYLING OF LIST ITEMS */
 
 section {
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 #extinct-list {
@@ -96,13 +97,14 @@ section {
 
 /*   STYLING ADD ANIMAL SECTION */
 
-.subheader {
+#subheader {
     background-color: #333;
     font-size: 1em;
     color: white;
     text-align: center;
     padding: 1px;
     margin-bottom: 20px;
+    margin: 0 0 20 0;
 }
 
 /*  STYLING FOOTER */
